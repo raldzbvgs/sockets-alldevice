@@ -1,0 +1,4 @@
+{
+  "SERVER_BUG": ["http://IP:2000"],
+  "SERVER_RAT": ["http://IP:2001"]
+}
